@@ -181,24 +181,22 @@ Section:NewButton("aimbot", "авто навождение на игроков",
 loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD Aimbot.txt"))()
 end)
 
--- Переключатель
-Section:NewToggle("big jump", "хз поему тогл", function(state)
-    if state then
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-    else
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-end
-end)
+
 -- Слайдер
 Section:NewSlider("speed", "YOOOOO", 1000, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
 
+Section:NewSlider("speed", "YOOOOO", 1000, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+
 
 
 Section:NewButton("synapse x", "remake", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
 end)
 
 Section:NewButton("KRNL", "remake", function()
@@ -2276,3 +2274,6 @@ local function LTLHER_fake_script() -- FloatingGUI.LocalScript
 end
 coroutine.wrap(LTLHER_fake_script)()
 end)
+
+
+
