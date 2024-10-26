@@ -1,4 +1,4 @@
--- Ссылка на Библиотеку
+- Ссылка на Библиотеку
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 --[[ 
 В данный момент стоит тема "RJTheme3" ,
@@ -192,14 +192,14 @@ Section:NewSlider("speed", "YOOOOO", 1000, 0, function(s) -- 500 (Макс. зн
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
+local Tab = Window:NewTab("Exploits")
 
 
-
-Section:NewButton("synapse x", "remake", function()
+Section:Exploits:NewButton("synapse x", "remake", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
 end)
 
-Section:NewButton("KRNL", "remake", function()
+Section:Exploits:NewButton("KRNL", "remake", function()
 local KRNL = Instance.new("ScreenGui")
 local KrnlGUI = Instance.new("Frame")
 local FileButton = Instance.new("TextButton")
